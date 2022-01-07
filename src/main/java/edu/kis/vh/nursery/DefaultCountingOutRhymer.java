@@ -6,7 +6,7 @@ public class DefaultCountingOutRhymer {
 	public static final int BASE_ELEMENT_COUNT = -1;
 	public static final int NO_VALUES = -1;
 
-	private int[] numbers = new int[RHYMER_CAPACITY];
+	private final int[] numbers = new int[RHYMER_CAPACITY];
 
 	public int total = BASE_ELEMENT_COUNT;
 
