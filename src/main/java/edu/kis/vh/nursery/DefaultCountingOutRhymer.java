@@ -2,17 +2,21 @@ package edu.kis.vh.nursery;
 
 public class DefaultCountingOutRhymer {
 
-	public static final int RHYMER_CAPACITY = 12;
-	public static final int BASE_ELEMENT_COUNT = -1;
-	public static final int NO_VALUES = -1;
+	private static final int RHYMER_CAPACITY = 12;
+	private static final int BASE_ELEMENT_COUNT = -1;
+	private static final int NO_VALUES = -1;
 
 	private final int[] numbers = new int[RHYMER_CAPACITY];
 
-	public int total = BASE_ELEMENT_COUNT;
+	private int total = BASE_ELEMENT_COUNT;
 
 	public void countIn(int in) {
 		if (!isFull())
 			numbers[++total] = in;
+	}
+
+	public int getTotal() {
+		return total;
 	}
 
 	public boolean callCheck() {
